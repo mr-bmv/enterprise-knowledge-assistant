@@ -1,0 +1,58 @@
+@startuml Enterprise Knowledge Assistant - Container
+
+!include <C4/C4_Container>
+
+title Enterprise Knowledge Assistant - Container Diagram
+
+
+Person(user, "Employee")
+
+System_Boundary(system, "Enterprise Knowledge Assistant") {
+
+Container(ui, "User Interface Layer",
+"Chat Interface",
+"User interaction")
+
+Container(orchestrator, "AI Orchestration Layer",
+"Workflow Engine",
+"Controls AI workflow")
+
+Container(rag, "Knowledge Retrieval Layer",
+"RAG Pipeline",
+"Searches corporate knowledge")
+
+Container(prompt, "Prompt Management Layer",
+"System Prompt",
+"Controls AI behavior")
+
+ContainerDb(kb, "Knowledge Base",
+"Documents",
+"Corporate regulations")
+
+Container(llm, "LLM Integration Layer",
+"Gemini API",
+"Generates responses")
+
+}
+
+
+System_Ext(erp, "Enterprise Systems",
+"ERP, HRM, Fleet (Future)")
+
+
+Rel(user, ui, "Asks questions")
+
+Rel(ui, orchestrator, "Sends request")
+
+Rel(orchestrator, rag, "Requests search")
+
+Rel(rag, kb, "Searches documents")
+
+Rel(orchestrator, prompt, "Applies rules")
+
+Rel(orchestrator, llm, "Generates answer")
+
+Rel(orchestrator, erp, "Future integration")
+
+
+@enduml
