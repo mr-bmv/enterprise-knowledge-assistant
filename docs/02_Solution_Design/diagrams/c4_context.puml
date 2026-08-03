@@ -1,0 +1,25 @@
+@startuml Enterprise_Knowledge_Assistant_C4_Context_Flows
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title Enterprise Knowledge Assistant - System Context Diagram (Request/Response flows)
+
+Person(employee, "Employee", "Company employee using AI assistant")
+System(assistant, "Enterprise Knowledge Assistant", "AI-powered corporate knowledge assistant")
+System_Ext(knowledge, "Knowledge Repository", "Corporate documents: PDF, DOCX, TXT, MD")
+System_Ext(aiEngine, "AI Engine", "LLM provider: Gemini Flash")
+Person(hr, "HR Specialist", "Handles escalated requests - Future")
+System_Ext(enterprise, "Enterprise Applications", "ERP, HRM, Fleet Management - Future")
+
+Rel(employee, assistant, "Пользовательский запрос")
+Rel(assistant, employee, "Ответ AI")
+
+Rel(assistant, knowledge, "Поиск документов")
+Rel(knowledge, assistant, "Релевантные данные")
+
+Rel(assistant, aiEngine, "Запрос генерации ответа")
+Rel(aiEngine, assistant, "Сгенерированный ответ")
+
+Rel(assistant, hr, "Эскалация обращения - Future")
+Rel(assistant, enterprise, "Бизнес-операции - Future")
+
+@enduml
