@@ -930,4 +930,5 @@ Rel(orchestrator, erp, "Future integration")
 @enduml
 ```
 
+ ![alt-text](../images/enterprise_knowledge_assistant_container_diagram.png)
    
