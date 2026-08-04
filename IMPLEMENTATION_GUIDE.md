@@ -25,7 +25,7 @@
 Архитектура RAG представлена на горизонтальной блок-схеме (pipeline):
 
 <p align="center">
-  <img src="docs/images/deepseek_mermaid_20260804_2b6f88.svg" alt="HR RAG Flow" width="100%">
+  <img src="docs/images/pipeline.png" alt="HR RAG Flow" width="800">
 </p>
 
 ---
