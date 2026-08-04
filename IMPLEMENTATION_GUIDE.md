@@ -5,7 +5,7 @@
 **Цель:** создать AI-ассистента, который отвечает сотрудникам на вопросы по внутренним регламентам компании.
 
 <p align="center">
-  <img src="docs/images/activity_diagram.png" alt="HR RAG Flow" width="800">
+  <img src="docs/images/activity_diagram2.png" alt="HR RAG Flow" width="550">
 </p>
 
 ---
@@ -17,7 +17,7 @@
 Диаграмма контейнеров (C4 Container Diagram) для проекта выглядит следующим образом:
 
 <p align="center">
-  <img src="docs/images/enterprise_knowledge_assistant_container_diagram.png" alt="HR RAG Flow" width="800">
+  <img src="docs/images/container.png" alt="HR RAG Flow" width="550">
 </p>
 
 ### RAG-архитектура
