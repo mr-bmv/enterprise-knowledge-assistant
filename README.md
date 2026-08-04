@@ -74,29 +74,9 @@
 
 Проект реализован по классической архитектуре Enterprise RAG.
 
-```
-Пользователь
-      │
-      ▼
-HR AI Assistant (Dify)
-      │
-      ▼
-Knowledge Retrieval
-      │
-      ▼
-Knowledge Base
-      │
- ├── Регламент командировок
- └── Регламент отпусков
-      │
-      ▼
-Gemini 3.6 Flash
-      │
-      ▼
-Ответ пользователю
-```
-
-> 📌 *Здесь появится схема архитектуры (C4 / минималистичная диаграмма).*
+<p align="center">
+  <img src="docs/images/dify_hr_rag_flow_solar_theme.svg" alt="HR RAG Flow" width="400">
+</p>
 
 ---
 
